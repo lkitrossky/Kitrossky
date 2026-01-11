@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+<title>Which weather?</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var rotate_delay = 2000; // 
+var current = 0;
+var pic11 , pic12 ,pic21 ,pic22 ,pic31 ,pic32 ;
+function window_onload()
+{
+   setTimeout("switchImage()",rotate_delay);
+   pic11 = new Image();  pic11.src = "img_2093.jpg";
+   pic12 = new Image();  pic12.src = "img_2092.jpg";
+}
+function switchImage()
+{
+//	debugger
+//	var tx = document.getElementById("txif");
+	if(current)
+	{
+    	document.whichimage1.src = pic11.src;
+//    	tx.innerText="If two lie - they are warm...";
+    	
+    }
+    else
+    {
+    	document.whichimage1.src = pic12.src;
+//    	tx.innerText="And how one will get warm? (Eccl. 4:11)";
+    }
+	current = (current+1)%2;
+    setTimeout("switchImage()",rotate_delay);
+}
+//  End -->
+</script>
+</head>
+<body onload="window_onload()">
+<H2><center>Furthermore, if two lie down together, they can keep each other warm, 
+<br>
+but how can one person keep warm by himself?
+ (Ecclesiastes 4:11)</center></H2>
+<div align="center">
+			<img border="0" src="img_2093.jpg" NAME="whichimage1" width="742" height="556">
+		
+>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+<title>Two with the lake and mountains</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var rotate_delay = 2000; // 
+var current = 0;
+var pic11 , pic12 ,pic21 ,pic22 ,pic31 ,pic32 ;
+function window_onload()
+{
+   setTimeout("switchImage()",rotate_delay);
+   pic21 = new Image();  pic21.src = "img_2096.jpg";
+   pic22 = new Image();  pic22.src = "img_2095.jpg";
+}
+function switchImage()
+{
+//	debugger
+//	var tx = document.getElementById("txif");
+	if(current)
+	{
+    	document.whichimage2.src = pic21.src;    	   	
+    }
+    else
+    {
+    	document.whichimage2.src = pic22.src;    	    	
+    }
+	current = (current+1)%2;
+    setTimeout("switchImage()",rotate_delay);
+}
+//  End -->
+</script>
+</head>
+<body onload="window_onload()">
+<H2><center>From these pictures one cannot say, if it is cold (her version) or not (his)</center></H2>
+<div align="center">
+			<img border="0" src="img_2096.jpg" NAME="whichimage2" width="420" height="559">
+		
+>
+</div>
+
+
+</body>
+
+</html>
